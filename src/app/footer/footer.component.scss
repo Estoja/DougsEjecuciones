@@ -1,0 +1,94 @@
+$fontNunito: 'Nunito', sans-serif;
+$fontUbuntu: 'Ubuntu', sans-serif;
+
+.share {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    @extend .share;
+}
+
+.name-company {
+    @extend .share;
+    font-family: $fontUbuntu;
+    font-size: 30px;
+    position: relative;
+    &:before {
+        content: "";
+        width: calc(33.333333% - 40px);
+        height: 1px;
+        background: #000000;
+        position: absolute;
+        display: block;
+        left: 0;
+    }
+    &:after {
+        content: "";
+        width: calc(33.333333% - 40px);
+        height: 1px;
+        background: #000000;
+        position: absolute;
+        display: block;
+        right: 0;
+    }
+}
+
+.social-media {
+    @extend .share;
+    height: 100px;
+    a {
+        padding-block-start: 8px;
+    }
+    a:nth-child(2) {
+        // padding-inline-start: 0px;
+        padding-block-start: 8px;
+    }
+}
+
+.contact {
+    @extend .share;
+    height: 200px;
+    font-family: $fontNunito;
+    font-size: 12px;
+    margin-block-start: 20px;
+    a {
+        text-decoration: none;
+        font-style: normal;
+    }
+    > div:nth-child(2) {
+        height: 100%;
+        display: relative;
+        &:before {
+            content: "";
+            height: 200px;
+            width: 1px;
+            background: black;
+            position: absolute;
+            display: block;
+            left: 50%;
+        }
+    }
+}
+
+.copy-right {
+    @extend .share;
+    height: 136px;
+    margin-block-start: 20px;
+    font-family: $fontNunito;
+    font-size: 12px;
+    > div:first-child {
+        display: relative;
+        height: 68px;
+        &:before {
+            content: "";
+            height: 68px;
+            width: 1px;
+            background: black;
+            position: absolute;
+            display: block;
+            left: 50%;
+        }
+    }
+}
