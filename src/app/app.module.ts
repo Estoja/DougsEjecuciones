@@ -16,6 +16,12 @@ import { FacebookComponent } from './svg/facebook/facebook.component';
 import { TwitterComponent } from './svg/twitter/twitter.component';
 import { InstagramComponent } from './svg/instagram/instagram.component';
 import { CopyRightComponent } from './svg/copy-right/copy-right.component';
+import { WhoAreWeComponent } from './pages/who-are-we/who-are-we.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ClientsComponent } from './pages/clients/clients.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { LogoComponent } from './logo/logo.component';
 
 
 @NgModule({
@@ -29,7 +35,13 @@ import { CopyRightComponent } from './svg/copy-right/copy-right.component';
     FacebookComponent,
     TwitterComponent,
     InstagramComponent,
-    CopyRightComponent
+    CopyRightComponent,
+    WhoAreWeComponent,
+    ServicesComponent,
+    ClientsComponent,
+    LandingComponent,
+    PageNotFoundComponent,
+    LogoComponent
   ],
   imports: [
     FlexLayoutModule,

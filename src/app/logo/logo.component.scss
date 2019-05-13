@@ -1,0 +1,45 @@
+$fontNunito: 'Nunito', sans-serif;
+$fontUbuntu: 'Ubuntu', sans-serif;
+
+.share-class {
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+}
+.container {
+    position: relative;
+    :first-child {
+        @extend .share-class;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        left: 0;
+        background-color: rgba(60, 178, 178, 0.75);
+        z-index: 1;
+    }
+    :nth-child(2) {
+        @extend .share-class;
+        height: 40px;
+        width: 40px;
+        top: 3px;
+        left: 15px;
+        background-color: rgba(40, 118, 118, 0.83);
+    }
+    .text {
+        font-family: $fontUbuntu;
+        position: absolute;
+        font-size: 25px;
+        font-weight: 1000;
+        left: 40px;
+    }
+    :nth-child(3) {
+        @extend .text;
+        width: 100px;
+        top: 2px;
+    }
+    :nth-child(4){
+        @extend .text;
+        width: 100px;
+        top: 30px;
+    }
+}
