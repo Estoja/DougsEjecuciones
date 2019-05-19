@@ -4,5 +4,56 @@ $fontUbuntu: 'Ubuntu', sans-serif;
 .mat-toolbar {
     background-color: white;
     color: black;
-    height: 200px;
+    height: 150px;
+}
+
+a {
+    height: 72px;
+    font-family: $fontNunito;
+    font-size: 15px;
+    font-weight: bold;
+    &:link, &:visited{
+        text-decoration: inherit;
+        color: inherit;
+        cursor: default;
+    }
+}
+
+
+.header-links {
+    ul, ul>li {
+        list-style-type: none;
+        margin: 0;
+        height: 72px;
+        color: gray;
+    }
+    li {
+        position: relative;
+        a {
+            box-shadow: none;
+            transition: box-shadow .8s;
+            -moz-transition: box-shadow .8s;
+            -o-transition: box-shadow .8s;
+            -webkit-transition: box-shadow .8s;
+            &:hover {
+                box-shadow: 
+                0 3px 3px -1px rgba(0,0,0,.25),
+                0 8px 20px rgba(0,0,0,.5);
+            }
+        }
+        &.active-link {
+            &::before {
+                content : "";
+                position: absolute;
+                left    : 0;
+                bottom  : 0;
+                height  : 0;
+                width   : 100%;
+                border-bottom: 3px solid black;
+            }
+            a {
+                color: black;
+            }
+        }
+    }
 }

@@ -22,6 +22,7 @@ import { ClientsComponent } from './pages/clients/clients.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { LogoComponent } from './logo/logo.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { LogoComponent } from './logo/logo.component';
     ClientsComponent,
     LandingComponent,
     PageNotFoundComponent,
-    LogoComponent
+    LogoComponent,
+    ContactComponent
   ],
   imports: [
     FlexLayoutModule,
