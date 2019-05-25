@@ -37,7 +37,7 @@ $fontUbuntu: 'Ubuntu', sans-serif;
 
 .social-media {
     @extend .share;
-    height: 100px;
+    height: 40px;
     a {
         padding-block-start: 8px;
     }
@@ -49,7 +49,7 @@ $fontUbuntu: 'Ubuntu', sans-serif;
 
 .contact {
     @extend .share;
-    height: 200px;
+    height: 80px;
     font-family: $fontNunito;
     font-size: 12px;
     margin-block-start: 20px;
@@ -62,7 +62,7 @@ $fontUbuntu: 'Ubuntu', sans-serif;
         display: relative;
         &:before {
             content: "";
-            height: 200px;
+            height: 80px;
             width: 1px;
             background: black;
             position: absolute;
@@ -74,7 +74,7 @@ $fontUbuntu: 'Ubuntu', sans-serif;
 
 .copy-right {
     @extend .share;
-    height: 136px;
+    height: 40px;
     margin-block-start: 20px;
     font-family: $fontNunito;
     font-size: 12px;

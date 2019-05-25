@@ -1,0 +1,24 @@
+$fontNunito: 'Nunito', sans-serif;
+$fontUbuntu: 'Ubuntu', sans-serif;
+
+.responsive {
+    width: 100%;
+    height: auto;
+    box-shadow: 
+        0 3px 3px -1px rgba(0, 0, 0, 0.25),
+        0 2px 8px rgba(0, 0, 0, 0.5)
+}
+.card-container {
+    mat-card {
+        background-color: white;
+        color: black;
+        text-align: justify;
+        mat-card-title {
+            font-family: $fontUbuntu;
+            font-style: bold;
+        }
+        mat-card-content {
+            font-family: $fontNunito;
+        }
+    }
+}

@@ -7,6 +7,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -17,7 +19,8 @@ import {MatListModule} from '@angular/material/list';
     MatTabsModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   exports: [
     BrowserAnimationsModule,
@@ -26,7 +29,8 @@ import {MatListModule} from '@angular/material/list';
     MatTabsModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ]
 })
 export class MaterialModule { }
