@@ -1,0 +1,14 @@
+$fontNunito: 'Nunito', sans-serif;
+$fontUbuntu: 'Ubuntu', sans-serif;
+
+a {
+    font-family: $fontNunito;
+    font-size: 16px;
+    
+    &.active-link {
+        background-color: #4e4e4e;
+    }
+    &:not(.active-link){
+        background-color: #424242;
+    }
+}

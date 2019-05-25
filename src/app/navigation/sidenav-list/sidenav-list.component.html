@@ -1,0 +1,7 @@
+<mat-nav-list>
+  <a *ngFor="let item of headerItems" mat-list-item routerLinkActive="active-link"
+      routerLink="{{item.route}}" (click)="onSidenavClose()" fxLayout="row">
+      <mat-icon>{{item.icon}}</mat-icon>
+      <span class="nav-caption" fxFlexOffset="20px">{{item.title}}</span>
+  </a>
+</mat-nav-list>

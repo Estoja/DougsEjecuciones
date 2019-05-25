@@ -6,10 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class ToolbarItemsService {
   private _headerItems_ = [
-    new ToolbarItems('INICIO', 'home'),
-    new ToolbarItems('QUIÉNES SOMOS', 'whoarewe'),
-    new ToolbarItems('SERVICIOS', 'services'),
-    new ToolbarItems('CLIENTES', 'clients')
+    new ToolbarItems('INICIO', 'home', 'home'),
+    new ToolbarItems('QUIÉNES SOMOS', 'whoarewe', 'assignment_ind'),
+    new ToolbarItems('SERVICIOS', 'services', 'room_service'),
+    new ToolbarItems('CLIENTES', 'clients', 'people'),
+    new ToolbarItems('CONTACTANOS', 'contact', 'email'),
   ]
 
   constructor() { }
@@ -18,3 +19,5 @@ export class ToolbarItemsService {
     return this._headerItems_;
   }
 }
+
+// Photo by rawpixel.com from Pexels

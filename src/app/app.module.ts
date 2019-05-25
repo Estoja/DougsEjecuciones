@@ -17,12 +17,13 @@ import { TwitterComponent } from './svg/twitter/twitter.component';
 import { InstagramComponent } from './svg/instagram/instagram.component';
 import { CopyRightComponent } from './svg/copy-right/copy-right.component';
 import { WhoAreWeComponent } from './pages/who-are-we/who-are-we.component';
-import { ServicesComponent } from './pages/services/services.component';
+import { ServicesComponent } from './pages/ourServices/services.component';
 import { ClientsComponent } from './pages/clients/clients.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { LogoComponent } from './logo/logo.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     LandingComponent,
     PageNotFoundComponent,
     LogoComponent,
-    ContactComponent
+    ContactComponent,
+    SidenavListComponent
   ],
   imports: [
     FlexLayoutModule,
