@@ -10,7 +10,7 @@
         <app-instagram fxFlex="40px" [color]="'black'" [size]="'25px'"></app-instagram>
       </a>
   </mat-toolbar-row>
-  <mat-toolbar-row class="contact" fxLayout='row' fxLayout.xs="column" fxLayoutGap="40px">
+  <mat-toolbar-row class="contact" fxLayout='row' fxLayout.xs="column" fxLayoutGap="40px" [ngStyle.xs]="{'height': '180px'}">
     <div fxFlex fxLayout='row' fxFlexFill fxLayoutAlign="center center">
       <app-gps fxFlex="40px" [color]="'black'" [size]="'35px'" fxLayout fxLayoutAlign="center center"></app-gps>
       <div fxFlex="150px" fxFlexOffset="10px" fxLayout="column" fxLayoutAlign="center start">
@@ -31,7 +31,7 @@
       </div>
     </div>
   </mat-toolbar-row>
-  <mat-toolbar-row class="copy-right" fxLayout='column' fxLayoutAlign="center center" >
+  <mat-toolbar-row class="copy-right" fxLayout='column' fxLayoutAlign="center center" [ngStyle.xs]="{'height': '100px'}">
     <div fxFlex fxFlexFill fxHide fxShow.xs="true"></div>
     <div fxFlex fxLayout="row" fxLayoutAlign="center center">
       <app-copy-right fxFlex="40px" [color]="'black'" [size]="'35px'" fxLayout fxLayoutAlign="center center"></app-copy-right>
