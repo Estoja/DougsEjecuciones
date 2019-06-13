@@ -1,18 +1,24 @@
-<div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-md="100px" fxLayoutGap.md="50px" fxLayoutGap.lt-md="20px" fxLayoutAlign.gt-md="space-around center" fxLayoutAlign.lt-md="space-between center">
+<div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-md="100px"
+    fxLayoutGap.md="50px" fxLayoutGap.lt-md="20px"
+    fxLayoutAlign.gt-md="space-around center" fxLayoutAlign.lt-md="space-between center">
   <div [ngStyle.sm]="{'width': '550px'}" fxFlex.gt-md="700px" fxFlex.md="600px" fxFlex.sm="367px">
-    <img src="assets/images/webP/team-work.webp" alt="team work" class="responsive">
+    <picture>
+      <source srcset="assets/images/webP/team-work.webp" type="image/webp">
+      <source srcset="assets/images/jpg/team-work.jpg" type="image/jpeg">
+      <img src="assets/images/jpg/team-work.jpg" alt="team work" class="responsive">
+    </picture>
   </div>
   <div class="card-container" fxLayout fxFlex.gt-md="400px" fxFlex.md="300px" fxFlex.sm="183px" fxLayoutAlign="center center">
     <mat-card [ngStyle.sm]="{'width': '518px'}">
       <mat-card-title>Actualizate</mat-card-title>
       <mat-card-content>
         <p>
-          Según la Resolución 1111 de 2017 las empresas se encuentran en la fase de ejecución de las 
-          actividades del sistema de gestión de seguridad y salud en el trabajo, esta fase se deberá 
+          Según la Resolución 1111 de 2017 las empresas se encuentran en la fase de ejecución de las
+          actividades del sistema de gestión de seguridad y salud en el trabajo, esta fase se deberá
           de implementar hasta el mes de diciembre de 2018.
         </p>
         <p>
-          A partir del mes de enero de 2019 se deberá de realizar de nuevo la auto evaluación y 
+          A partir del mes de enero de 2019 se deberá de realizar de nuevo la auto evaluación y
           proponer el plan de acción, el cual se deberá de ejecutar hasta el mes de marzo de 2019.
         </p>
       </mat-card-content>

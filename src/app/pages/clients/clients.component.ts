@@ -1,3 +1,5 @@
+import { ClientsService } from './../../services/clients.service';
+import { Client } from './../../classes/client';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clients.component.scss']
 })
 export class ClientsComponent implements OnInit {
+  clients: Array<Client>;
 
-  constructor() { }
+  constructor(private clientService: ClientsService) { }
 
   ngOnInit() {
+    this.clients = this.clientService.getClients();
   }
 
 }

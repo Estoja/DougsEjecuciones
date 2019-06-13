@@ -1,0 +1,14 @@
+$fontNunito: 'Nunito', sans-serif;
+$fontUbuntu: 'Ubuntu', sans-serif;
+
+mat-card {
+    background-color: white;
+    color: black;
+    font-family: $fontNunito;
+    font-weight: bold;
+    margin-block-start: 20px;
+    mat-card-title {
+        font-size: larger;
+        width: 100%;
+    }
+}
