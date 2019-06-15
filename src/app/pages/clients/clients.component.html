@@ -1,9 +1,8 @@
-<div class="container">
-  <div  fxLayout="row wrap" fxLayoutGap.gt-xs="30px" fxLayoutAlign="center center">
+<div>
+  <div fxLayout="row wrap" fxLayoutGap.gt-xs="30px" fxLayoutAlign="center center">
       <mat-card *ngFor="let client of clients" fxFlex="0 1 auto"
           fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5px">
-        <img
-            [ngStyle]="{'width': client.image.width, 'height': client.image.height}"
+        <img [ngStyle]="{'width': client.image.width, 'height': client.image.height}"
             mat-card-lg-image
             src="{{client.image.url}}"
             alt="{{client.image.description}}">

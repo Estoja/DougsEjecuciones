@@ -1,0 +1,30 @@
+$fontNunito: 'Nunito', sans-serif;
+$fontUbuntu: 'Ubuntu', sans-serif;
+
+.container {
+    width: 100%;
+    mat-card{
+        background-color: white;
+        color: black;
+        mat-card-title{
+            font-family: $fontUbuntu;
+            font-size: 19px;
+            font-weight: bold;
+        }
+        mat-card-content{s
+            ul{
+                padding-inline-start: 28px;
+                li{
+                    font-family: $fontNunito;
+                    text-align: justify;
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+}

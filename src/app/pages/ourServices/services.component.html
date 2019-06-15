@@ -1,3 +1,41 @@
-<p>
-  services works!
-</p>
+<div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center"
+    fxLayoutGap="50px" class="container">
+  <mat-card fxFlex.gt-sm="400px" [ngStyle.lt-md]="{'width': '400px'}" [ngStyle.lt-sm]="{'width': '300px'}">
+      <mat-card-title>Seguridad y salud en el trabajo</mat-card-title>
+      <picture>
+        <source srcset="assets/images/webP/security-work_1280x254.webp" type="image/webp">
+        <source srcset="assets/images/jpg/security-work_1280x254.jpg" type="image/jpeg">
+        <img mat-card-image src="assets/images/jpg/security-work_1280x254.jpg" alt="Safety work" class="responsice">
+      </picture>
+      <mat-card-content>
+        <ul>
+            <li>Implementación de sistemas de gestión de seguridad y salud en el trabajo</li>
+            <li>Elaboración de planes de prevención, preparación y atención de emergencias </li>
+            <li>Creación de grupos de apoyo</li>
+            <li>Elaboración de matriz de riesgos y peligros</li>
+            <li>Capacitaciones en temas de seguridad</li>
+            <li>Capacitaciones en temas de convivencia laboral</li>
+            <li>Investigaciones de accidentes de trabajo</li>
+        </ul>
+      </mat-card-content>
+  </mat-card>
+  <mat-card fxFlex.gt-sm="400px" [ngStyle.lt-md]="{'width': '400px'}" [ngStyle.lt-sm]="{'width': '300px'}">
+      <mat-card-title>Recursos humanos</mat-card-title>
+      <picture>
+        <source srcset="assets/images/webP/human-resources-1280x254.webp" type="image/webp">
+        <source srcset="assets/images/jpg/human-resources-1280x254.jpg" type="image/jpeg">
+        <img mat-card-image src="assets/images/jpg/human-resources-1280x254.jpg" alt="Human resources" class="responsice">
+      </picture>
+      <mat-card-content>
+        <ul>
+            <li>Realización de procesos de selección</li>
+            <li>Contratación de personal</li>
+            <li>Afiliación y pago a la seguridad social</li>
+            <li>Elaboración de procesos disciplinarios</li>
+            <li>Elaboración de evaluaciones de desempeño</li>
+            <li>Capacitaciones de trabajo en equipo</li>
+            <li>Realización de nominas y liquidación de prestaciones sociales.</li>
+        </ul>
+      </mat-card-content>
+  </mat-card>
+</div>

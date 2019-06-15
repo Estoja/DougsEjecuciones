@@ -4,7 +4,7 @@ $fontUbuntu: 'Ubuntu', sans-serif;
 .mat-toolbar {
     background-color: white;
     color: black;
-    height: 150px;
+    height: 120px;
 }
 
 a {
@@ -36,7 +36,7 @@ a {
             -o-transition: box-shadow .8s;
             -webkit-transition: box-shadow .8s;
             &:hover {
-                box-shadow: 
+                box-shadow:
                 0 3px 3px -1px rgba(0,0,0,.25),
                 0 8px 20px rgba(0,0,0,.5);
             }
@@ -55,11 +55,5 @@ a {
                 color: black;
             }
         }
-    }
-}
-
-mat-nav-list {
-    a {
-        
     }
 }
