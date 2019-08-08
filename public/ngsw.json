@@ -1,0 +1,101 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.1f0f1e3df5a1290d2f38.js",
+        "/polyfills.7e61eeabe4f75fabb7d3.js",
+        "/runtime.26209474bfa8dc87a77c.js",
+        "/styles.5a95a57b61fb3b47287b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/jpg/human-resources-1280x254.jpg",
+        "/assets/images/jpg/security-work_1280x254.jpg",
+        "/assets/images/jpg/team-work.jpg",
+        "/assets/images/png/antenas_torres-logo.png",
+        "/assets/images/png/carroceriasLibertad-logo.png",
+        "/assets/images/png/guardianesrecolectores-logo.png",
+        "/assets/images/png/hidro-tec-logo.png",
+        "/assets/images/png/logo-alumcor.png",
+        "/assets/images/png/logo-importacionesAZ.png",
+        "/assets/images/png/logo-teleco-fondo-azul-1.png",
+        "/assets/images/png/logoseguros.png",
+        "/assets/images/webP/human-resources-1280x254.webp",
+        "/assets/images/webP/security-work_1280x254.webp",
+        "/assets/images/webP/team-work.webp",
+        "/assets/logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/jpg/human-resources-1280x254.jpg": "dac3bc23e596860fd4b31c0c62dde317f0226c67",
+    "/assets/images/jpg/security-work_1280x254.jpg": "752ea23abefcf83d2c51e5c68f52df0e76268693",
+    "/assets/images/jpg/team-work.jpg": "6bf1b2946fa370fc6abf2b6670cc7101b8fcecc4",
+    "/assets/images/png/antenas_torres-logo.png": "0b17366829c98019af1ddd40de386db64eeaaaaf",
+    "/assets/images/png/carroceriasLibertad-logo.png": "b26efaf548b60787be00ab597f88ea65cb9c3168",
+    "/assets/images/png/guardianesrecolectores-logo.png": "67032be420bcca0179d0669e828a6fcfefd97be1",
+    "/assets/images/png/hidro-tec-logo.png": "72ccd815bb500780ad74fd9ac6aa5aadb06bacbc",
+    "/assets/images/png/logo-alumcor.png": "476109b2eef36406c09f11e5a7ae9d38e1853c50",
+    "/assets/images/png/logo-importacionesAZ.png": "c02b93065a4abed3ef459a41b40e4cb690e9b32a",
+    "/assets/images/png/logo-teleco-fondo-azul-1.png": "25146c3baf42d2c50e7f4164c312d3c02b5976a5",
+    "/assets/images/png/logoseguros.png": "99cb659ed05d70fa4eb94d2922f021a076cc3355",
+    "/assets/images/webP/human-resources-1280x254.webp": "6821d4fbc44f3eddeda19237f4543271e64f24bb",
+    "/assets/images/webP/security-work_1280x254.webp": "b4b05240741cdcef7e8d1bb12eed620a2f385fba",
+    "/assets/images/webP/team-work.webp": "271943ea709c264bd2b402bfd0c220fad2ac1b18",
+    "/assets/logo.png": "27659aff3fd53f60376699ed0c6024863e088549",
+    "/favicon.ico": "0257688eb949eb18a6d851e6a8d24c705684904c",
+    "/index.html": "0a2b6c544e51ac85892fe2be929b0200487387ac",
+    "/main.1f0f1e3df5a1290d2f38.js": "ae02064d925a2e376dd16e7ecdf6c3f76dbbe7b7",
+    "/polyfills.7e61eeabe4f75fabb7d3.js": "6946e10a03311677a01490b8e91741668e64e17e",
+    "/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/styles.5a95a57b61fb3b47287b.css": "f7133979537b961bb146008ab53dee035a480092"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
