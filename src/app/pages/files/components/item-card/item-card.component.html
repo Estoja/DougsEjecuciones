@@ -1,0 +1,18 @@
+<mat-card class="file-card">
+  <mat-card-content>
+    <img src="../../../../../assets/icon-files/{{ fileData.name | fileExt }}.png"
+      alt="Icon for {{ fileData.name | fileExt }} extension">
+    <p>
+      {{ fileData.name | slice: 14:38 }}<span *ngIf="fileData.name.length > 38">...</span>
+    </p>
+    <small>{{ fileData.timeCreated | date: 'dd/MM/yyyy, hh:mm:ss a' }}</small>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="toDownloadFile(fileData.name)">
+      <mat-icon>file_download</mat-icon>
+    </button>
+    <button mat-button (click)="confirmDeleteFileDialog(fileData.name)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

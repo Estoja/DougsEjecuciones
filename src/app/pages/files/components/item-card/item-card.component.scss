@@ -1,0 +1,36 @@
+$fontNunito: 'Nunito', sans-serif;
+$colorBgWhite: #f7f7f7;
+$colorBlack: #000;
+
+.file-card {
+  width: 100px;
+  display: inline-block;
+  margin: 15px;
+  background: $colorBgWhite;
+  text-align: center;
+  font-family: $fontNunito;
+  color: $colorBlack;
+
+  mat-card-content {
+    margin: 0;
+
+    img {
+      max-width: 50px;
+    }
+
+    p {
+      word-wrap: break-word;
+      height: 55px;
+    }
+  }
+
+  mat-card-actions {
+    .mat-button {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      min-width: 0;
+    }
+  }
+}

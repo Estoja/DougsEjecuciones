@@ -24,6 +24,25 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { LogoComponent } from './logo/logo.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { FilesComponent } from './pages/files/files.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SessionService } from './services/session.service';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { DropFileDirective } from './pages/files/components/drag-and-drop/directives/drop-file.directive';
+import { FileSizePipe } from './pages/files/pipes/file-size.pipe';
+import { FileExtPipe } from './pages/files/pipes/file-ext.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DeleteDialogComponent } from './pages/files/components/delete-dialog/delete-dialog.component';
+import { ItemCardComponent } from './pages/files/components/item-card/item-card.component';
+import { DragAndDropComponent } from './pages/files/components/drag-and-drop/drag-and-drop.component';
+import { LoginComponent } from './pages/files/components/login/login.component';
 
 
 @NgModule({
@@ -45,16 +64,35 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     PageNotFoundComponent,
     LogoComponent,
     ContactComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    FilesComponent,
+    DropFileDirective,
+    FileSizePipe,
+    FileExtPipe,
+    DeleteDialogComponent,
+    ItemCardComponent,
+    DragAndDropComponent,
+    LoginComponent
   ],
   imports: [
     FlexLayoutModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
+    MatSnackBarModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFireStorageModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  entryComponents: [DeleteDialogComponent],
+  providers: [SessionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,23 @@
+<mat-progress-spinner *ngIf="isLoading && !isFormVisible && !isAuthenticated" color="primary" mode="indeterminate" diameter="25">
+</mat-progress-spinner>
+
+<app-login *ngIf="!isAuthenticated && isFormVisible" (loginActionNotify)="checkAuthentication()"></app-login>
+
+<div *ngIf="isAuthenticated" class="container">
+  <div *ngIf="isAuthenticated" class="container-file">
+    <mat-toolbar>
+      <span fxHide.gt-sm>Bienvenido</span>
+      <span fxHide.lt-md>Bienvenido <small><i>{{ displayName }}</i> al sistema de archivos</small></span>
+      <span class="spacer"></span>
+      <button mat-raised-button color="primary" class="button" (click)="doSignOut()">Cerrar sesión</button>
+    </mat-toolbar>
+
+    <mat-progress-spinner *ngIf="isLoading && isAuthenticated" class="loading-file" color="primary" mode="indeterminate" diameter="25">
+    </mat-progress-spinner>
+
+    <app-item-card *ngFor="let file of files" [fileData]="file" (downloadFileAction)="downloadFile($event)" (deleteFileAction)="deleteFile($event)"></app-item-card>
+
+    <app-drag-and-drop (getFilesAction)="getFiles()" (notifyAction)="openSnackBar($event, 'close')"></app-drag-and-drop>
+  </div>
+
+</div>

@@ -1,0 +1,14 @@
+$fontNunito: 'Nunito', sans-serif;
+
+.msg-404 {
+  color: #141414;
+  font-family: $fontNunito;
+  text-align: center;
+
+  .mat-icon {
+    color: #a9a9a9;
+    font-size: 150px;
+    height: 150px;
+    width: 150px;
+  }
+}

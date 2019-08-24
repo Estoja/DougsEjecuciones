@@ -1,0 +1,45 @@
+<div class="container-add-file">
+  <div class="container-input-drop" *ngIf="isDropFileVisible">
+    <div class="add-file-input" appDropFile (hovered)="toggleHover($event)" (dropped)="startUpload($event)"
+      [class.hovering]="isHovering">
+      <h3 fxHide.lt-sm>Arrastre el archivo a este lugar</h3>
+      <div class="file">
+        <label class="file-label">
+          <input class="file-input" type="file" (change)="startUpload($event.target.files)">
+          <span class="file-cta">
+            <span class="file-icon">
+              <i class="fa fa-upload"></i>
+            </span>
+            <span fxHide.lt-sm class="file-label">
+              o seleccione uno...
+            </span>
+          </span>
+        </label>
+      </div>
+    </div>
+    <div *ngIf="percentage | async as pct">
+      <mat-progress-bar class="example-margin" color="primary" mode="determinate" [value]="pct">
+      </mat-progress-bar>
+      <span class="percentage-label" *ngIf="pct === 100">
+        {{ pct | number }}% - Carga completa
+      </span>
+      <div *ngIf="snapshot | async as snap">
+        <span class="percentage-label">
+          {{ snap.bytesTransferred | fileSize }} de {{ snap.totalBytes | fileSize }} ({{ pct | number }}%)
+        </span>
+        <button mat-raised-button color="primary" class="btn-file-actions" (click)="task.pause()"
+          *ngIf="!!isActive(snap)">Pausar</button>
+        <button mat-raised-button color="primary" class="btn-file-actions" (click)="taskCancel()"
+          *ngIf="!!isActive(snap)">Cancelar</button>
+        <button mat-raised-button color="primary" class="btn-file-actions" (click)="task.resume()"
+          *ngIf="!!(snap?.state === 'paused')">Reanudar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="add-file-btn">
+    <button mat-fab aria-label="Add file" (click)="isDropFileVisible = !isDropFileVisible">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>

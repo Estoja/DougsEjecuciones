@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Confirmación</h1>
+<div mat-dialog-content>
+  <p>¿Esta seguro que desea eliminar el archivo "{{ data.name | slice: 14 }}"?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="'OK'" cdkFocusInitial>Si</button>
+</div>

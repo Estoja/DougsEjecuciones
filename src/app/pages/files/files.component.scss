@@ -1,0 +1,70 @@
+$fontNunito: 'Nunito', sans-serif;
+$colorBgWhite: #f7f7f7;
+$colorBlack: #000;
+
+.mat-progress-spinner{
+  margin: auto;
+}
+
+.mat-progress-spinner.loading-file{
+  position: absolute;
+  margin: 10px -20px 0 -20px;
+  left: 50%;
+  z-index: 1000;
+  background: #fff;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0px 0px 3px 0px rgba(144, 144, 144, 0.75);
+}
+
+.mat-raised-button:enabled {
+  background-color: $colorBlack;
+}
+
+.container {
+  width: 100vw;
+
+  .container-file {
+    margin: 0 15px;
+    background-color: #f1f1f1;
+    color: $colorBlack;
+    font-family: $fontNunito;
+
+    .mat-toolbar {
+      background: #468c8d;
+    }
+
+    .mat-raised-button:enabled {
+      background-color: #346667;
+    }
+
+    .spacer {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+    background-color: #468b8d;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 2px;
+}
+
+::ng-deep .mat-dialog-container {
+  font-family: $fontNunito;
+  background: #fff;
+  color: #272727;
+
+  .mat-dialog-actions {
+    .mat-button {
+      margin: 0 !important;
+      width: 50%;
+    }
+  }
+}

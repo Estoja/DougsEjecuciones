@@ -1,0 +1,58 @@
+$colorGreenDark: #346667;
+$colorGreenLight: #65c5c6;
+
+.container-add-file {
+  display: flex;
+
+  .add-file-input, .add-file-btn {
+    display: inline-block;
+  }
+
+  .container-input-drop {
+    width: 100%;
+    margin: 10px;
+    .add-file-input {
+      padding: 0 0 10px 0;
+      background: rgba(101, 197, 198, 0.25);
+      border: 2px dashed $colorGreenDark;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 130px;
+
+      &.hovering {
+        border: 2px solid $colorGreenDark;
+        color: #808080 !important;
+        background: #e8ffff;
+      }
+    }
+
+    .mat-progress-bar {
+      margin-top: 10px;
+    }
+
+    .percentage-label {
+      margin: 5px 0 0 10px;
+    }
+
+    .btn-file-actions {
+      margin: 10px 10px 0 10px;
+      background-color: $colorGreenDark;
+    }
+  }
+
+  .add-file-btn {
+    padding: 25px;
+    margin-left: auto;
+    order: 2;
+
+    .mat-fab.mat-accent,
+    .mat-flat-button.mat-accent,
+    .mat-mini-fab.mat-accent,
+    .mat-raised-button.mat-accent {
+      background-color: $colorGreenLight;
+    }
+  }
+}

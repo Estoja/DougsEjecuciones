@@ -6,6 +6,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { ServicesComponent } from './pages/ourServices/services.component';
 import { ClientsComponent } from './pages/clients/clients.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { FilesComponent } from './pages/files/files.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'whoarewe', component: WhoAreWeComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'files', component: FilesComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

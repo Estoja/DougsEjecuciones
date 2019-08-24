@@ -1,0 +1,52 @@
+$fontNunito: 'Nunito', sans-serif;
+$colorBgWhite: #f7f7f7;
+$colorBlack: #000;
+
+mat-card.card-login {
+  margin: 20vh 0;
+  width: 30vw;
+  min-width: 350px;
+  max-width: 400px;
+  text-align: center;
+  font-family: $fontNunito;
+  background: $colorBgWhite;
+  background: $colorBgWhite;
+  color: $colorBlack;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  color: $colorBlack;
+
+  .mat-card-title {
+    color: $colorBlack;
+  }
+
+  .mat-card-subtitle {
+    color: #888;
+  }
+
+  .mat-card-content {
+    .mat-form-field {
+      display: block;
+    }
+  }
+}
+
+::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+  background-color: #444 !important;
+  color: #444 !important
+}
+
+::ng-deep .mat-focused .mat-form-field-label,
+::ng-deep .mat-form-field-empty.mat-form-field-label,
+::ng-deep .mat-form-field-infix.mat-form-field-label,
+::ng-deep .mat-form-field-infix.mat-form-field-label-wrapper.mat-form-field-label,
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-label {
+  color: #444 !important;
+}
+
+.mat-raised-button:enabled {
+  background-color: #346667;
+}
+
+.mat-progress-spinner{
+  margin: auto;
+}

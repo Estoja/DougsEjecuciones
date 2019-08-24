@@ -1,0 +1,36 @@
+<mat-card class="card-login">
+  <mat-card-title>Inicio de sesión</mat-card-title>
+  <mat-card-subtitle>Para ver sus archivos, por favor inicie sesión.</mat-card-subtitle>
+  <mat-card-content>
+    <mat-progress-spinner *ngIf="isLoading" color="primary" mode="indeterminate" diameter="25">
+    </mat-progress-spinner>
+    <form [formGroup]="loginForm" (ngSubmit)="doLogin()">
+      <mat-error *ngIf="loginForm.invalid && (loginForm.dirty || loginForm.touched)">
+        <div *ngIf="loginForm.errors && loginForm.errors.wrongCredentials">
+          {{ loginForm.errors.wrongCredentials }}
+        </div>
+      </mat-error>
+      <mat-form-field>
+        <input matInput placeholder="Correo electrónico" formControlName="email">
+        <mat-error *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)">
+          <div *ngIf="emailField.errors.required">
+            El correo electrónico es obligatorio.
+          </div>
+          <div *ngIf="emailField.errors.email">
+            El correo electrónico ingresado no es valido.
+          </div>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Contraseña" formControlName="password" type="password">
+        <mat-error *ngIf="passwordField.invalid && (passwordField.dirty || passwordField.touched)">
+          <div *ngIf="passwordField.errors.required">
+            La contraseña es obligatorio.
+          </div>
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" class="button" [disabled]="!loginForm.valid">Iniciar
+        sesión</button>
+    </form>
+  </mat-card-content>
+</mat-card>
