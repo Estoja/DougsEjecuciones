@@ -11,7 +11,7 @@ export class ToolbarItemsService {
     new ToolbarItems('SERVICIOS', 'services', 'room_service'),
     new ToolbarItems('CLIENTES', 'clients', 'people'),
     new ToolbarItems('CONTACTANOS', 'contact', 'email'),
-    new ToolbarItems('DOCUMENTOS', 'files', 'insert_drive_file')
+    new ToolbarItems('DOCUMENTOS', 'http://201.184.144.206:8888/owncloud', 'insert_drive_file')
   ];
 
   constructor() { }

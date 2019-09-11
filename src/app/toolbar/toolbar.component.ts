@@ -9,12 +9,15 @@ import { ToolbarItemsService } from '../services/toolbar-items.service';
 })
 export class ToolbarComponent implements OnInit {
   @Output() public sidenavToggle = new EventEmitter();
-  headerItems : Array<ToolbarItems>;
+  headerItems: Array<ToolbarItems>;
+  documentsItem: ToolbarItems;
 
   constructor(private toolbarService: ToolbarItemsService) { }
 
   ngOnInit() {
     this.headerItems = this.toolbarService.getHeaderItem();
+    this.documentsItem = this.headerItems.pop();
+    console.log(this.documentsItem);
   }
 
   public onToggleSidenav = () => {

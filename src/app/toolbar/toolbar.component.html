@@ -13,6 +13,9 @@
           <li *ngFor="let item of headerItems" fxFlex="135px" routerLinkActive="active-link">
               <a routerLink="{{item.route}}" fxLayout fxLayoutAlign="center center">{{item.title}}</a>
           </li>
+          <li fxFlex="135px">
+            <a href="{{documentsItem.route}}" target="_blank" fxLayout fxLayoutAlign="center center">{{documentsItem.title}}</a>
+          </li>
       </ul>
   </div>
 </mat-toolbar>
